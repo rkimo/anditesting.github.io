@@ -1,0 +1,185 @@
+html {
+    cursor: crosshair;
+}
+
+@font-face {
+    font-family: 'Sabon2';
+    src: url(SabonNextLTPro-Italic.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: HelExt;
+    src: url('HelveticaNeueLTPro-BlkEx.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: MonoCor;
+    src: url(MonotypeCorsiva.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Tiffany;
+    src: url(TorinoModern-Roman.ttf);
+    font-style: normal;
+}
+
+body {
+    background-size: 7em 7em;
+    background-image: linear-gradient(to right, black 1px, transparent 1px), linear-gradient(to bottom, black 1px, transparent 1px);
+}
+
+background {
+    color: black;
+}
+
+.header {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 0;
+    top: 1em;
+}
+
+.titlename {
+    display: block;
+    margin: 10px 0px 0px 0px;
+    font-family: sans-serif;
+    color: black;
+    left: 1em;
+    font-size: 12px;
+}
+
+.titlename a {
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#name {
+    position: fixed;
+}
+
+.about {
+    display: inline-block;
+    margin: auto;
+    right: 1em;
+    position: fixed;
+    font-family: sans-serif;
+    color: black;
+    font-size: 12px;
+}
+
+.aboutOverlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 50;
+    cursor: crosshair;
+}
+
+#aboutWriteup {
+    position: absolute;
+    font-family: sans-serif;
+    top: 50%;
+    left: 50%;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    line-height: 1.3;
+    width: 50%;
+    max-height: 100%;
+}
+
+#aboutTitle {
+    font-family: Helext;
+    font-size: 20px;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+#Currentclients {
+    font-size: 17px;
+    color: white;
+    line-height: 0.7;
+}
+
+#Currentclients a {
+    font-size: 17px;
+    color: darkorange;
+}
+
+#Fancyboys a {
+    color: darkorange;
+    font-size: 17px;
+}
+
+.gallery {
+    width: 500px;
+    height: 50%;
+}
+
+.image {
+    position: absolute;
+    margin: auto;
+    transform-style: preserve-3d;
+    z-index: -1;  
+}
+
+#busy1 {
+    display: block;
+    margin: auto;
+    max-width: 600px;
+    width:100%;
+}
+
+#busy12 {
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translateZ(200px) translateX(-50%) translateY(-50%);
+}
+
+
+.abouttitle {
+
+        display: inline-block;
+    margin: auto;
+    right: 1em;
+    position: fixed;
+    font-family: sans-serif;
+    color: black;
+    font-size: 12px;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+#container {
+        display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
